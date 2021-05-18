@@ -1,0 +1,162 @@
+@import "vars"
+@import "fonts"
+@import "main.scss"
+@import "libs"
+
+/*==========	user style	==========*/
+body
+	min-width: 1300px
+
+a
+	transition: .3s
+	color: inherit
+	&:link
+		outline: none 0
+		text-decoration: none
+		color: inherit
+	&:visited
+		outline: none 0
+		text-decoration: none
+		color: inherit
+	&:hover
+		text-decoration: none
+		color: inherit
+	&:active
+		outline: none 0
+		text-decoration: none
+		color: inherit
+
+ul
+	margin: 0
+	padding: 0
+	list-style: none
+*
+	transition: inherit
+.body
+	background-color: #f7f7f7
+	color: #262626
+	font-family: 'Yanone Kaffeesatz', sans-serif
+	line-height: 1.5
+	font-size: 18px
+.main
+	padding: 50px 0
+	letter-spacing: .4px
+	text-align: justify
+	.container
+		.title
+			text-align: center
+			font-size: 30px
+			position: relative
+			margin-bottom: 30px
+			&:before
+				position: absolute
+				content: ""
+				bottom: -10px
+				left: 50%
+				transform: translateX(-50%)
+				width: 50px
+				height: 2px
+				background: #f44336
+		.sub_title
+			text-align: center
+			font-size: 24px
+			margin: 30px 0px 20px
+		.content_image
+			width: 100%
+			img
+				border: 1px solid #ccc
+				width: 100%
+				&:hover
+					transform: scale(1.1)
+
+.header
+	background: #29b6f6
+	.container
+		height: 75px
+		display: flex
+		align-items: center
+		justify-content: center
+		nav
+			.nav
+				display: flex
+				align-items: center
+				&__item
+					&__link
+						cursor: pointer
+						padding: 5px 15px
+						text-transform: uppercase
+						font-size: 22px
+						opacity: .7
+						text-align: center
+						display: block
+						position: relative
+						z-index: 2
+						line-height: 1
+						transition: .2s
+						&::before
+							content: ""
+							position: absolute
+							left: 0
+							bottom: 0
+							width: 100%
+							height: 0px
+							background: #f0f0f0
+							z-index: -1
+							transition: .2s
+						&:hover
+							opacity: 1
+							&::before
+								height: 50%
+						&.active
+							opacity: 1
+
+.footer
+	background: #262626
+	color: #f0f0f0
+	padding: 50px 0
+	.container
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-wrap: wrap
+		.footer_title 
+			font-size: 30px
+			margin-top: 30px
+			font-weight: 300
+		nav
+			.nav
+				display: flex
+				align-items: center
+				&__item
+					&__link
+						cursor: pointer
+						padding: 5px 15px
+						text-transform: uppercase
+						font-size: 22px
+						opacity: .7
+						text-align: center
+						display: block
+						position: relative
+						z-index: 2
+						line-height: 1
+						transition: .2s
+						&::before
+							content: ""
+							position: absolute
+							left: 0
+							bottom: 0
+							width: 100%
+							height: 0px
+							background: #f44336
+							z-index: -1
+							transition: .2s
+						&:hover
+							opacity: 1
+							&::before
+								height: 50%
+						&.active
+							opacity: 1
+
+/*==========	user style	==========*/
+
+@import "media" // Always at the end
