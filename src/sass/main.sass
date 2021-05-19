@@ -63,12 +63,48 @@ ul
 			margin: 30px 0px 20px
 		.content_image
 			width: 100%
+			&.single
+				margin-bottom: 30px
 			img
 				border: 1px solid #ccc
 				width: 100%
 				&:hover
 					transform: scale(1.1)
-
+		.list
+			list-style: circle
+			padding-left: 30px
+			margin-bottom: 15px
+		.category_item
+			margin-bottom: 30px
+			&:hover
+				.image
+					transform: scale(1.1)
+					.name
+						height: 100%
+						font-size: 28px
+			.image
+				width: 100%
+				display: flex
+				height: 300px
+				justify-content: center
+				overflow: hidden
+				position: relative
+				transition: .2s
+				img
+					height: 100%
+				.name
+					position: absolute
+					bottom: 0
+					left: 0
+					background: rgba(#f44336,0.8)
+					color: #fff
+					font-weight: bold
+					font-size: 24px
+					width: 100%
+					height: 30%
+					display: flex
+					justify-content: center
+					align-items: center
 .header
 	background: #29b6f6
 	.container
@@ -109,6 +145,7 @@ ul
 								height: 50%
 						&.active
 							opacity: 1
+							font-weight: bold
 
 .footer
 	background: #262626
@@ -119,7 +156,7 @@ ul
 		align-items: center
 		justify-content: center
 		flex-wrap: wrap
-		.footer_title 
+		.footer_title
 			font-size: 30px
 			margin-top: 30px
 			font-weight: 300
@@ -156,6 +193,7 @@ ul
 								height: 50%
 						&.active
 							opacity: 1
+							font-weight: bold
 
 /*==========	user style	==========*/
 
